@@ -8,7 +8,7 @@
   <script src="app.js"></script>
   <style> .glyphicon-thumbs-up { cursor:pointer } </style>
 </head>
-<body ng-app="flapperNews" ng-controller="MainCtrl">
+<body ng-app="flapperNews">
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
       <ui-view></ui-view>
@@ -77,6 +77,19 @@
       {{comment.body}}
     </span>
   </div>
+
+  <form ng-submit="addComment()"
+    style="margin-top:30px;">
+    <h3>Add a new comment</h3>
+
+    <div class="form-group">
+      <input type="text"
+      class="form-control"
+      placeholder="Comment"
+      ng-model="body"></input>
+    </div>
+    <button type="submit" class="btn btn-primary">Post</button>
+  </form>
 </script>
 
 </body>
