@@ -18,7 +18,7 @@ function($scope){
 	  	upvotes: 0
 	  })
 	  $scope.title = ''
-	  $scope.links = ''
+	  $scope.link = ''
 	}
 	$scope.incrementUpvotes = function(post) {
 	  post.upvotes++
